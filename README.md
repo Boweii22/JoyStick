@@ -49,9 +49,7 @@ The `onMove` method gives you three key parameters:
 - **yPercent**: Vertical displacement from the center (-1 to 1).
 - **direction**: A string representing the direction (e.g., "Up", "Down", "Left", "Right", etc.).
 
-### Kotlin Version
 
-If you're interested in using a Kotlin version of this joystick view, you can check out the Kotlin implementation 
 ## Customization
 
 You can easily customize the appearance of the joystick by modifying the paint properties for:
