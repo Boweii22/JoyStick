@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOYSTICK"
+            android:fontFamily="sans-serif"
+            android:textSize="23sp"
+            android:layout_weight="1"
+            android:letterSpacing="0.3" />
+
+        <!-- X and Y Coordinates -->
+        <TextView
+            android:id="@+id/coordinate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: 0, Y: 0"
+            android:layout_gravity="end"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/joyStickLayout"
+        android:gravity="center">
+
+        <!-- Joystick Custom View -->
+        <com.smartherd.joystick.JoystickView
+            android:id="@+id/joystick"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            />
+
+        <!-- Direction Text (Idle, Up, Down, Left, Right, etc.) -->
+        <TextView
+            android:id="@+id/direction_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idle"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
